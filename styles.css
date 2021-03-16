@@ -243,9 +243,18 @@ background-color: #fbfcfd;
 .about{
     display: flex;
     justify-content: center;
+    flex-direction:column;
+    align-items: center;
+
+}
+.heading_par{
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    align-self: center;
 }
 .abt-container{
-    width: 80%;
+    /* width: 80%;
     height: 50%;
     background-color: #eee;
     border-radius: 20px;
@@ -253,7 +262,8 @@ background-color: #fbfcfd;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    width: 70%;
+   
 }
 
 .col-1 img{
@@ -264,14 +274,11 @@ background-color: #fbfcfd;
 }
 .paragraph{
     color:#000729;
-    padding:50px;
+    padding-top:80px;
+    padding-left:10px;
+    
 }
-.heading_par{
-    padding-top:50px;
-    padding-left:50px;
-    font-size: 18px;
-    font-weight: bold;
-}
+
 
 .col-1{
     animation: example 2.5s infinite ease;
