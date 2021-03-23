@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Playfair Display', serif;
-    /* font-family: sans-serif; */
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Poppins', sans-serif;
 }
 html {
     scroll-behavior: smooth;
@@ -10,8 +10,8 @@ html {
 
 .hero{
     width: 100%;
-    height: 100vh;
-    background-image: url(assets//sky2.jpg);
+    height: 100%;
+    background-image: url(assets/cont.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -53,19 +53,24 @@ html {
     color: #fbfcfd;
     position: absolute;
     top: 50%;
-    left: 8%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     transform: translateY(-50%);
     z-index: 2;
 }
 h1{
     font-size: 80px;
-    margin:10px 0 30px;
+    /* margin:10px 0 30px; */
     line-height: 80px;
+    font-family: Poppins;
 }
 .side-bar{
     width: 50px;
     height: 100vh;
-    background: linear-gradient(#00545d, #000729);
+    background: linear-gradient(#292825, #382a25);
     position: fixed;
     right: 0;
     top: 0;
@@ -89,6 +94,27 @@ h1{
     top:50%;
     transform: translateY(-50%);
 }
+
+.side-menu{
+    position: absolute;
+    top:20%;
+}
+
+.social-links-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:87%;
+}
+
+.social-links-2 img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
 .useful-links{
     width: 50px;
     text-align: center;
@@ -99,14 +125,7 @@ h1{
     width: 50px;
     animation: bubble 15s linear infinite;
 }
-.bubbles{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: absolute;
-    bottom: -70px;
-}
+
 .resize_img{
    
     padding: 5px; /* Some padding */
@@ -131,10 +150,7 @@ h1{
     border-bottom: 1px solid grey;
 }
 
-.about{
-    height: 100vh;
-    background-color: #fbfcfd;
-}
+
 .about .container{
     display: flex;
     justify-content: center;
@@ -142,51 +158,8 @@ h1{
 .about-heading{
     text-align: center;
 }
-@keyframes bubble{
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-80vh);
-        opacity: 0;
-    }
-}
 
-.bubbles img:nth-child(1){
-    animation-delay: 8s;
-    width: 70px;
-}
-.bubbles img:nth-child(2){
-    animation-delay: 15s;
-    
-}
-.bubbles img:nth-child(3){
-    animation-delay: 20s;
-    width: 85px;
-}
-.bubbles img:nth-child(4){
-    animation-delay: 25s;
-    width: 100px;
-}
-.bubbles img:nth-child(5){
-    animation-delay: 16s;
 
-}
-.bubbles img:nth-child(6){
-    animation-delay: 18s;
-    width: 20px;
-}
-.bubbles img:nth-child(7){
-    animation-delay: 7s;
-    width: 35px;
-}
 
 .copyright{
     width: 100%;
@@ -244,16 +217,16 @@ h1{
     justify-content: center;
     flex-direction:column;
     align-items: center;
-    height: 50vh;
-    background-color: #fbfcfd;
-
+    height: 100%;
+    background: linear-gradient(rgba(255,255,255,.2), rgba(255,255,255,.2)),  url(assets/laptopimg.jpg);
+    opacity: 0.5;
+    background-size: cover;
+    
 
 }
 .heading_par{
     font-size: 38px;
     font-weight: bold;
-    text-align: center;
-    align-self: center;
 }
 
 .about-con{
@@ -261,7 +234,7 @@ h1{
     justify-content: center;
     flex-direction: row;
     width: 1000px;
-    /* border: solid black; */
+    margin-right: 30px;
 }
 
 .row-container{
@@ -272,25 +245,36 @@ h1{
 }
 
 .col-1 img{
-    width:200px;
-    height:200px;
-    padding-top:50px;
+    width:300px;
+    height:300px;
+    object-fit: contain;
 
 }
 .paragraph{
-    color:#000729;
+    color:#fbfcfd;
     padding-top:50px;
-    padding-left:10px;
-    
 }
 
 
-.col-1{
+/* .col-1{
     animation: example 3s infinite ease;
     position: relative;
-}
+} */
 
 @keyframes example {
+    0% {
+        top:0px;
+    }
+    50% {
+        top:20px;
+    }
+    100% {
+        top:0px;
+    }
+   
+  }
+
+  @keyframes about-animate {
     0% {
         top:0px;
     }
