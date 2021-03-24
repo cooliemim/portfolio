@@ -57,6 +57,7 @@
 </style>
 
 <body>
+
     <div class="side-bar">
         <img src="assets/menu.png" class="menu" onclick="openNav()">
         <div class="social-links">
@@ -71,31 +72,27 @@
     </div>
 
 
-
-
     <div id="home">
         <div class="hero">
             <div class="navbar">
                 <img src="assets/logo.png" class="logo">
-              
             </div>
             <div class="content">
-                <h1>Soar High <h1> 
-                </h1> Reach The Sky</h1>
+                <h1 class="main_text">Hello I'm Alexa Klein </h1>
+                <h1 class="sub_text">Developer & Designer</h1>
                 <button type="button" class="take">Take a tour</button>
             </div>
         </div>
-
     </div>
 
-    <div class="about-main" id="about" data-aos="zoom-in">
-        <div class="about-con" >   
+    <div class="about-main" id="about">
+        <div class="about-con">
             <div class="row-container">
                 <div class="heading_par">
                     <p>About Me</p>
-                    <p>Developer & Designer</p>
                 </div>
-                <div class="col-2">
+                <div class="col-2" data-aos="fade-right">
+                    <img class="ornament" src="assets/ornamentpng.png">
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
                         labore et dolore magna aliqua.
@@ -104,27 +101,52 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                 </div>
+                <button type="button" class="resume">Check my Resume</button>
             </div>
-             
-            <div class="col-1">
+            <div class="col-1" data-aos="fade-left">
                 <img src="assets/me.jpg">
-             </div>
-
-            
-
+            </div>
         </div>
+    </div>
 
+    <div class="services-main" id="services">
+        <div class="services-con">
+            <div class="section-heading">
+                <p class="main-serv-text">Services</p>
+
+                <img class="ornament" src="assets/ornamentpng.png">
+
+            </div>
+
+            <div class="my-skills">
+                <p class="sub-serv-text">What I can do for you</p>
+                <div class="skill">
+                    <div class="skill-container">
+                        <img src="web_dev.svg">
+                        <p class="sub-small-text">Web Development</p>
+                    </div>
+                    <div class="skill-container">
+                        <img src="web_design.svg">
+                        <p class="sub-small-text">Web Design</p>
+                    </div>
+                    <div class="skill-container">
+                        <img src="mobile_design.svg">
+                        <p class="sub-small-text">Mobile App Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h2 style="color:#818181; padding-bottom: 10px; padding-left: 20px; text-transform: uppercase;">Hello There !</h2>
-        
+        <h2 style="color:#818181; padding-bottom: 10px; padding-left: 20px; text-transform: uppercase;">Hello There !
+        </h2>
         <div class="side-menu">
             <a href="#">Home</a>
-            <a id="about-id" href="#about">About</a>
-            <a href="#">Services</a>
+            <a id="" href="#about">About</a>
+            <a href="#services">Services</a>
             <a href="#">Skills</a>
             <a href="#">Contact</a>
         </div>
@@ -135,6 +157,7 @@
         </div>
     </div>
 
+    <div class="cursor"></div>
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fa fa-chevron-up" aria-hidden="true"><a href="#home"></a></i>
@@ -142,19 +165,14 @@
         <p>&copy; 2021 Alexa Klein Ayes</p>
     </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-
-       
         AOS.init({
-        duration: 1000,
+            duration: 1600,
         })
-
-        $("#about-id").on("click", function () {
-            $("body").scrollTop(0);
-        });
-
         function openNav() {
             document.getElementById("mySidenav").style.width = "350px";
         }
@@ -165,8 +183,24 @@
         $("#up").on("click", function () {
             $("body").scrollTop(0);
         });
+    </script>
 
-       
+    <script>
+
+
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 0) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
     </script>
 
 </body>
