@@ -3,6 +3,7 @@
     padding: 0;
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Poppins', sans-serif;
+    list-style: none;
 }
 html {
     scroll-behavior: smooth;
@@ -10,6 +11,7 @@ html {
 
 body{
     overflow-x: hidden;
+    
 }
 
 .hero{
@@ -22,6 +24,7 @@ body{
     overflow: hidden;
     z-index: 0;
     background-size: cover;
+    cursor: none;
     
 }
 .logo{
@@ -87,6 +90,7 @@ body{
 .sub_text{
     font-size: 36px;
     font-family: Poppins;
+    color: #fbfcfde3
 }
 
 .side-bar{
@@ -240,8 +244,10 @@ body{
     flex-direction:column;
     align-items: center;
     width: 100%;
+  
     height: 100%;
     background: #1f1f1f;
+    cursor: none;
     /* background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.2)),  url(assets/laptop.jpg);
     background-size: cover; */
     
@@ -259,6 +265,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    /* width: 100%; */
     width: 1000px;
     margin-right: 30px;
 }
@@ -272,6 +279,13 @@ body{
     display: flex;
     flex-direction: column;
     width: 50%;
+   
+}
+
+.row-container2{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
    
 }
 
@@ -388,12 +402,12 @@ body{
 /* services */
 
 .services-main{
+    cursor: none;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    border: 1px solid;
     background: #1f1f1f;
 }
 
@@ -422,19 +436,18 @@ body{
     color: #fbfcfdb0;
 }
 
-.skill{
+.my-services-con{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.skill-container{
+.subserve-container{
     width: 300px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.my-skills{
-    border: 1px solid;
+.my-services{
     padding-top: 60px;
     text-align: center;
 }
@@ -446,7 +459,241 @@ body{
 }
 
 
+/* End of Services Section */
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 70%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #view_pdf{
+      width: 100%;
+      height: 90%;
+  }
+
+/* skills */
+
+.skills-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+    background: #1f1f1f;
+}
+
+.skills-con{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.skill-list{
+    width: 40%;
+    padding-left: 40px;
+    padding-top: 120px;
+    /* margin: 60px auto; */
+    color: white;
+}
+
+.skill-list li{
+    margin: 20px 0;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span{
+    height: 2px;
+    float: left;
+    background: #2187e7;
+}
+
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+
+.css{
+    width: 65%;
+    animation: css 2s;
+}
+
+.jquery{
+    width: 70%;
+    animation: jquery 2s;
+}
+.javascript{
+    width: 50%;
+    animation: javascript 2s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes jquery{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+
+/* End of Skills Section */
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .main_text{
+        font-size: 36px;
+    }
+
+    .sub_text{
+        font-size:  24px;
+        margin-bottom: 40px;
+    }
+
+    .about-main {
+        height: auto;
+    }
+    .about-con {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+      
+    }
+
+    .row-container{
+        width: 70%;
+        align-items: center;
+    }
+
+    .paragraph{
+        font-size: 12px;
+        text-align: justify;
+        padding-right: 15px;
+    }
+
+    .ornament{
+        width: 280px;
+    }
+
+    .resume {
+       margin-bottom: 30px;
+    }
+
+    .up {
+        width: 2rem;
+        height: 2rem;
+        top: -1.5rem;
+        right: 4rem;
+    }
+    .up i {
+        font-size: 1rem;
+    }
+
+    .services-main{
+        width: 90%;
+        height: auto;
+    }
+
+    .services-con{
+        margin-top: 60px;
+    }
+
+    .my-services-con{
+        flex-direction: column;
+    }
+
+    .my-services{
+        padding-top: 0px;
+    }
+
+    .subserve-container{
+        padding-top: 60px;
+    }
+
+   
+}
 
 
 

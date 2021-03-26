@@ -1,7 +1,9 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Website</title>
+   
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,6 +56,8 @@
             font-size: 18px;
         }
     }
+
+  
 </style>
 
 <body>
@@ -87,11 +91,14 @@
 
     <div class="about-main" id="about">
         <div class="about-con">
+            <div class="col-1" data-aos="fade-up">
+                <img src="assets/me.jpg">
+            </div>
             <div class="row-container">
                 <div class="heading_par">
                     <p>About Me</p>
                 </div>
-                <div class="col-2" data-aos="fade-right">
+                <div class="col-2" data-aos="fade-up">
                     <img class="ornament" src="assets/ornamentpng.png">
                     <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut
@@ -101,12 +108,21 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.</p>
                 </div>
-                <button type="button" class="resume">Check my Resume</button>
+                <button type="button" id="myBtn" class="resume">View my Resume</button>
             </div>
-            <div class="col-1" data-aos="fade-left">
-                <img src="assets/me.jpg">
-            </div>
+           
         </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="view_pdf"></div>
+        </div>
+
     </div>
 
     <div class="services-main" id="services">
@@ -118,23 +134,60 @@
 
             </div>
 
-            <div class="my-skills">
+            <div class="my-services">
                 <p class="sub-serv-text">What I can do for you</p>
-                <div class="skill">
-                    <div class="skill-container">
-                        <img src="web_dev.svg">
-                        <p class="sub-small-text">Web Development</p>
-                    </div>
-                    <div class="skill-container">
+                <div class="my-services-con">
+                    <div class="subserve-container">
                         <img src="web_design.svg">
                         <p class="sub-small-text">Web Design</p>
                     </div>
-                    <div class="skill-container">
+
+                    <div class="subserve-container">
+                        <img src="web_dev.svg">
+                        <p class="sub-small-text">Web Development</p>
+                    </div>
+
+                    <div class="subserve-container">
                         <img src="mobile_design.svg">
                         <p class="sub-small-text">Mobile App Design</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="skills-main" id="skills">
+        <div class="skills-con">
+
+            <div class="row-container2">
+                <div class="heading_par">
+                    <p class="main-serv-text"> My Skills</p>
+                </div>
+
+                <div class="col-2" data-aos="fade-right">
+                    <img class="ornament" src="assets/ornamentpng.png">
+                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="skill-list">
+                <li>
+                    <h3>HTML</h3><span class="bar"><span class="html"></span></span>
+                </li>
+                <li>
+                    <h3>CSS</h3><span class="bar"><span class="css"></span></span>
+                </li>
+                <li>
+                    <h3>JQUERY</h3><span class="bar"><span class="jquery"></span></span>
+                </li>
+                <li>
+                    <h3>JAVASCRIPT </h3><span class="bar"><span class="javascript"></span></span>
+                </li>
+            </div>
+
         </div>
     </div>
 
@@ -158,6 +211,7 @@
     </div>
 
     <div class="cursor"></div>
+    
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fa fa-chevron-up" aria-hidden="true"><a href="#home"></a></i>
@@ -168,13 +222,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="pdfobject.min.js"></script>
 
     <script>
         AOS.init({
             duration: 1600,
         })
         function openNav() {
-            document.getElementById("mySidenav").style.width = "350px";
+            document.getElementById("mySidenav").style.width = "200px";
         }
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
@@ -201,6 +256,41 @@
                 cursor.classList.remove("expand");
             }, 500)
         })
+    </script>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+    <script>
+        var viewer = $('#view_pdf');
+        PDFObject.embed('Ayes_Alexa_Klein_Resume.pdf' , viewer);
     </script>
 
 </body>
