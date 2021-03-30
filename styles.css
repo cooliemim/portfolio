@@ -255,7 +255,7 @@ body{
 .row-container2{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
    
 }
 
@@ -580,6 +580,106 @@ body{
 
 /* End of Skills Section */
 
+/* contact */
+
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+}
+
+.contact-con{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
+.contact-heading {
+    text-align: left;
+    width: 50%;
+}
+
+
+
+.sub-contact{
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+}
+
+
+.contact-data{
+    width: 50%;
+}
+
+.fields{
+    width: 40%;
+    padding-left: 40px;
+    padding-top: 120px;
+    color: white;
+
+}
+
+.text-input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
+
+.text-area{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+
+.seperation{
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-txt-contact{
+    font-weight: bold;
+    color: #eee;
+    font-size: 20px;
+}
+
+.par-txt{
+    font-weight:200;
+    font-size: 15px;
+    color: #eee;
+}
+
+.round{
+    width: 30px;
+    height: 30px;
+    background-color: #eee;
+    border: 1px solid #eee;
+    border-radius: 100%;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+
+
+/** end of contact line **/
+
+
+
+
+
 /** horizontal line **/
 .lines{
     width: 250px;
@@ -642,6 +742,20 @@ body{
 }
 
 /** end horizontal line **/
+
+
+
+.alert-sucess {
+    color: #37eb79f2;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.alert-danger{
+    color: #ff2763;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
 
 @media only screen and (max-width: 640px) {
     
@@ -710,6 +824,7 @@ body{
     }
 
     .services-main{
+        margin-top: 50px;
         width: 100%;
         height: auto;
     }
@@ -733,6 +848,7 @@ body{
     .skills-main{
         width: 100%;
         align-items: center;
+        margin-top: 50px;
     }
 
     .skills-con{
@@ -742,6 +858,26 @@ body{
         text-align: center;
     }
 
+ 
+    .contact-main{
+        width: 100%;
+        height: auto;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .seperation{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-con{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
     .row-container2{
         width: 100%;
     }
@@ -752,6 +888,16 @@ body{
         padding-left:0px;
     }
 
+    .fields{
+        width: 80%;
+        padding-top: 20px;
+        padding-left:0px;
+    }
+
+    .contact-data{
+        width: 90%;
+        padding: 20px;
+    }
     .lines{
         width: 100%;
     }
@@ -759,6 +905,7 @@ body{
     .side-icon{
         top: 20;
         right: 20;
+        z-index: 999999;
     }
     .sidenav .closebtn{
         top: 5;

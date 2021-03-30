@@ -1,3 +1,54 @@
+<?php
+  use PHPMailer\PHPMailer\PHPMailer;
+  use PHPMailer\PHPMailer\Exception;
+
+  require 'vendor/phpmailer/phpmailer/src/Exception.php';
+  require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+  require 'vendor/phpmailer/phpmailer/src/SMTP.php';
+
+  // Include autoload.php file
+  require 'vendor/autoload.php';
+  // Create object of PHPMailer class
+  $mail = new PHPMailer(true);
+
+  $output = '';
+
+  if (isset($_POST['submit'])) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+
+    try {
+      $mail->isSMTP();
+      $mail->Host = 'smtp.gmail.com';
+      $mail->SMTPAuth = true;
+      $mail->Username = 'alexakleinayes@gmail.com';
+      $mail->Password = 'SweetEctasy345@';
+      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+      $mail->Port = 587;
+
+      // Email ID from which you want to send the email
+      $mail->setFrom('alexakleinayes@gmail.com');
+      // Recipient Email ID where you want to receive emails
+      $mail->addAddress('alexakleinayes@gmail.com');
+
+      $mail->isHTML(true);
+      $mail->Subject = 'Form Submission';
+      $mail->Body = "<h3>Name : $name <br>Email : $email <br>Message : $message</h3>";
+
+      $mail->send();
+      $output = '<div class="">
+                  <h5 class="alert-sucess">Thankyou! for contacting  me, I\'ll get back to you soon!</h5>
+                </div>';
+    } catch (Exception $e) {
+      $output = '<div class="">
+                  <h5 class="alert-danger">' . $e->getMessage() . '</h5>
+                </div>';
+    }
+  }
+
+?>
+
 <html>
 
 <head>
@@ -129,30 +180,30 @@
             position: absolute;
             bottom: -100%;
             left: -70;
-            animation: anim 2s forwards,  anim2 3s forwards 3s;
-           
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
         }
 
-         @keyframes anim {
-                from {
-                    bottom: -100%;
-                }
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
 
-                to {
-                    bottom: 0%;
-                }
+            to {
+                bottom: 0%;
+            }
         }
 
         @keyframes anim2 {
-                from {
-                    bottom: 0%;
-                    width: 530px;
-                }
+            from {
+                bottom: 0%;
+                width: 530px;
+            }
 
-                to {
-                    width: 0px;
-                    bottom: -35%;
-                }
+            to {
+                width: 0px;
+                bottom: -35%;
+            }
         }
 
         #box2 {
@@ -315,6 +366,89 @@
     </div>
 
 
+
+    <div class="contact-main" id="contact">
+        <div class="contact-con">
+
+            <div class="row-container2">
+                <div class="heading_par">
+                    <p class="main-serv-text"> Say Hi</p>
+                </div>
+
+                <div class="col-2">
+                    <div class="container-div">
+                        <div class="lines">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-data">
+                        <ul>
+                            <li class="sub-contact" data-aos="fade-up" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-delay="200">
+                                <div class="seperation">
+                                    <div class="round">
+                                        <i class="fa fa-phone" style="color: black; font-size: 24px;"
+                                            aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-txt-contact">CALL ME</p>
+                                        <p class="par-txt">+639-302-818-979</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="sub-contact" data-aos="fade-up" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-delay="400">
+                                <div class="seperation">
+                                    <div class="round">
+                                        <i class="fa fa-envelope-o" style="color: black; font-size: 24px;"
+                                            aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-txt-contact">EMAIL ME</p>
+                                        <p class="par-txt">alexakleinayes@gmail.com</p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li class="sub-contact" data-aos="fade-up" data-aos-offset="300"
+                                data-aos-easing="ease-in-sine" data-aos-delay="600">
+                                <div class="seperation">
+                                    <div class="round">
+                                        <i class="fa fa-home" style="color: black; font-size: 24px;"
+                                            aria-hidden="true"></i>
+                                    </div>
+
+                                    <div>
+                                        <p class="sub-txt-contact">ADDRESS</p>
+                                        <p class="par-txt">303 E2 Mendiola St. Alabang Muntinlupa City</p>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fields">
+            <h5 id="output_id"><?= $output; ?></h5>
+            <form action="#contact" method="post">
+                <input type="text" class="text-input" name="name" placeholder="Your Name" required>
+                <input type="text" class="text-input"  name="email" placeholder="Your Email" required>
+                <textarea class="text-area" rows="4" name="message" placeholder="Message" required></textarea>
+                <button class="resume" name="submit" id="submit" type="submit">Submit</button>
+            </form>
+            </div>
+
+        </div>
+    </div>
+
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2
@@ -326,7 +460,8 @@
             <a id="" href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#skills">Skills</a>
-            <a href="/home.html">Contact</a>
+            <a href="#works">Works</a>
+            <a href="#contact">Contact</a>
         </div>
         <div class="social-links-2">
             <img src="assets/fb.png">
@@ -415,5 +550,15 @@
         var viewer = $('#view_pdf');
         PDFObject.embed('Ayes_Alexa_Klein_Resume.pdf', viewer);
     </script>
+
+    <script>
+        jQuery(document).ready(function() {
+            setTimeout(function() {
+                $('#output_id').html('')
+            }, 7000);
+        });
+  
+    </script>
 </body>
+
 </html>
