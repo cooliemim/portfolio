@@ -59,6 +59,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <style>
@@ -171,6 +172,8 @@
         }
     }
 
+  
+
     @media only screen and (max-width: 640px) {
         #box1 {
             width: 530px;
@@ -234,7 +237,8 @@
     <div id="home">
         <div class="hero">
             <div class="navbar">
-                <img src="assets/logo.png" class="logo">
+                <!-- <img src="assets/logo.png" class="logo"> -->
+                <span class="multicolortext">Alexa.</span>
                 <!-- <img src="assets/menu.png" class="menu" onclick="openNav()"> -->
                 <span class="side-icon" onclick="openNav()">&#9776;</span>
             </div>
@@ -242,7 +246,7 @@
                 <div id="text">
                     <h1 class="main_text">Hi I'm Alexa Klein </h1>
                     <h1 class="sub_text">Developer & Designer</h1>
-                    <button type="button" class="take">Take a tour</button>
+                    <button type="button" onclick="scrollContact()" class="take">Say Hi!</button>
                 </div>
             </div>
 
@@ -267,13 +271,13 @@
                             <div class="circle"></div>
                         </div>
                     </div>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
+                    <p class="paragraph">I'm a UI Designer and Front End Developer from Muntinlupa Phillipines.  When it comes to 
+                    design I always value customer preferences combine with my passion for creativity and aesthetic approach. Design that understands both customer & user through functional flows and transitions will be my consistently top priority.
+                    <br>
+                    <br>
+                    I also love coding and developing. Writing clean and efficient code with a touch of proper animation will always enhance user experience, which increase the level of interest on a website.
+                    
+                    </p>
                 </div>
                 <button type="button" id="myBtn" class="resume">View my Resume</button>
             </div>
@@ -363,6 +367,23 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="works-main">
+        <div class="work-con">
+           <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+           
+        </div>
+
     </div>
 
 
@@ -483,6 +504,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="pdfobject.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
         AOS.init({
@@ -498,6 +520,8 @@
         $("#up").on("click", function () {
             $("body").scrollTop(0);
         });
+
+    
     </script>
 
     <script>
@@ -558,6 +582,30 @@
             }, 7000);
         });
   
+    </script>
+
+    <script>
+        function scrollContact(){
+            $('html,body').animate({
+            scrollTop: $("#contact").offset().top},
+            'slow');
+        }
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+      
+    });
     </script>
 </body>
 
