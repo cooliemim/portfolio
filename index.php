@@ -588,7 +588,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img class="banner-img" src="assets/ebanner.png" />
-                        <button class="view-work">View Work</button>
+                        <button class="view-work" id="myButton">View Work</button>
                     </div>
                     <div class="swiper-slide">
                     <img  class="banner-img" src="assets/mobilebanner.png" />
@@ -622,7 +622,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img class="banner-img" src="assets/ebanner.png" />
-                        <button class="view-work" id="myButton">View Work</button>
+                        <button class="view-work" >View Work</button>
                     </div>
                     <div class="swiper-slide">
                     <img  class="banner-img" src="assets/mobilebanner.png" />
