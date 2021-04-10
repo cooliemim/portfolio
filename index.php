@@ -23,7 +23,7 @@
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
       $mail->Username = 'alexakleinayes@gmail.com';
-      $mail->Password = 'dummypassword';
+      $mail->Password = 'dummy';
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mail->Port = 587;
 
@@ -172,9 +172,17 @@
         }
     }
 
-  
-
     @media only screen and (max-width: 640px) {
+       
+        .main_text {
+            font-size: 30px;
+        }
+
+        .sub_text {
+            font-size: 22px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
         #box1 {
             width: 530px;
             height: 625px;
@@ -220,6 +228,194 @@
 
         }
     }
+
+    @media only screen and (max-width: 768px) {
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: 120;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
+
+            to {
+                bottom: 10%;
+            }
+        }
+
+        @keyframes anim2 {
+            from {
+                bottom: 10%;
+                width: 530px;
+            }
+
+            to {
+                width: 0px;
+                bottom: -5%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: -70;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
+
+            to {
+                bottom: 0%;
+            }
+        }
+
+        @keyframes anim2 {
+            from {
+                bottom: 0%;
+                width: 530px;
+            }
+
+            to {
+                width: 0px;
+                bottom: -30%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    } 
+    @media only screen and (max-width: 360px) {
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: -70;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
+
+            to {
+                bottom: 0%;
+            }
+        }
+
+        @keyframes anim2 {
+            from {
+                bottom: 0%;
+                width: 530px;
+            }
+
+            to {
+                width: 0px;
+                bottom: -35%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    } 
+
+    @media only screen and (max-width: 320px) {
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: -90;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
+
+            to {
+                bottom: -10%;
+            }
+        }
+
+        @keyframes anim2 {
+            from {
+                bottom: -10%;
+                width: 530px;
+            }
+
+            to {
+                width: 0px;
+                bottom: -50%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    } 
+
 
     @media screen and (max-height: 450px) {
         .sidenav {
@@ -271,12 +467,17 @@
                             <div class="circle"></div>
                         </div>
                     </div>
-                    <p class="paragraph">I'm a UI Designer and Front End Developer from Muntinlupa Phillipines.  When it comes to 
-                    design I always value customer preferences combine with my passion for creativity and aesthetic approach. Design that understands both customer & user through functional flows and transitions will be my consistently top priority.
-                    <br>
-                    <br>
-                    I also love coding and developing. Writing clean and efficient code with a touch of proper animation will always enhance user experience, which increase the level of interest on a website.
-                    
+                    <p class="paragraph">I'm a UI Designer and Front End Developer from Muntinlupa Phillipines. When it
+                        comes to
+                        design I always value customer preferences combine with my passion for creativity and aesthetic
+                        approach. Design that understands both customer & user through functional flows and transitions
+                        will be my consistently top priority.
+                        <br>
+                        <br>
+                        I also love coding and developing. Writing clean and efficient code with a touch of proper
+                        animation will always enhance user experience, which increase the level of interest on a
+                        website.
+
                     </p>
                 </div>
                 <button type="button" id="myBtn" class="resume">View my Resume</button>
@@ -369,21 +570,78 @@
         </div>
     </div>
 
-    <div class="works-main">
+    <div class="works-main" id="works">
         <div class="work-con">
-           <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+            <div class="col-2" data-aos="fade-down">
+                <div class="heading_par2">
+                    <p class="main-serv-text"> My Works</p>
+                </div>
+                <div class="container-div">
+                    <div class="lines">
+                        <div class="circle"></div>
+                    </div>
                 </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
-           
-        </div>
+            
+            <div class="swiper-container">
+                <p class="paragraph-mockup">Mock up Designs</p>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="banner-img" src="assets/ebanner.png" />
+                        <button class="view-work">View Work</button>
+                    </div>
+                    <div class="swiper-slide">
+                    <img  class="banner-img" src="assets/mobilebanner.png" />
+                    <button class="view-work">View Work</button>
+                    <!-- <a href="#" class="view-work">View Work</a> -->
+                    </div>
+                    <div class="swiper-slide">
+                    <img class="banner-img" src="assets/cbanner.png" />
+                    <button class="view-work">View Work</button>
+                    </div>
 
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="col-2" style="margin-top:30px;" >
+                <div class="container-div">
+                    <div class="lines">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-container">
+                <p class="paragraph-mockup">Contributor to a projects under Clique Management</p>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="banner-img" src="assets/ebanner.png" />
+                        <button class="view-work" id="myButton">View Work</button>
+                    </div>
+                    <div class="swiper-slide">
+                    <img  class="banner-img" src="assets/mobilebanner.png" />
+                    <button class="view-work">View Work</button>
+                    <!-- <a href="#" class="view-work">View Work</a> -->
+                    </div>
+                    <div class="swiper-slide">
+                    <img class="banner-img" src="assets/cbanner.png" />
+                    <button class="view-work">View Work</button>
+                    </div>
+
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
     </div>
 
 
@@ -457,13 +715,15 @@
             </div>
 
             <div class="fields">
-            <h5 id="output_id"><?= $output; ?></h5>
-            <form action="#contact" method="post">
-                <input type="text" class="text-input" name="name" placeholder="Your Name" required>
-                <input type="text" class="text-input"  name="email" placeholder="Your Email" required>
-                <textarea class="text-area" rows="4" name="message" placeholder="Message" required></textarea>
-                <button class="resume" name="submit" id="submit" type="submit">Submit</button>
-            </form>
+                <h5 id="output_id">
+                    <?= $output; ?>
+                </h5>
+                <form action="#contact" method="post">
+                    <input type="text" class="text-input" name="name" placeholder="Your Name" required>
+                    <input type="text" class="text-input" name="email" placeholder="Your Email" required>
+                    <textarea class="text-area" rows="4" name="message" placeholder="Message" required></textarea>
+                    <button class="resume" name="submit" id="submit" type="submit">Submit</button>
+                </form>
             </div>
 
         </div>
@@ -521,7 +781,7 @@
             $("body").scrollTop(0);
         });
 
-    
+
     </script>
 
     <script>
@@ -573,39 +833,49 @@
     <script>
         var viewer = $('#view_pdf');
         PDFObject.embed('Ayes_Alexa_Klein_Resume.pdf', viewer);
+
+
+        document.getElementById("myButton").onclick = function () {
+        location.href = "ecommerce.html";
+    };
     </script>
 
     <script>
-        jQuery(document).ready(function() {
-            setTimeout(function() {
+        jQuery(document).ready(function () {
+            setTimeout(function () {
                 $('#output_id').html('')
             }, 7000);
         });
-  
+
     </script>
 
     <script>
-        function scrollContact(){
+        function scrollContact() {
             $('html,body').animate({
-            scrollTop: $("#contact").offset().top},
-            'slow');
+                scrollTop: $("#contact").offset().top
+            },
+                'slow');
         }
     </script>
 
     <script>
         var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-      
-    });
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        });
     </script>
 </body>
 

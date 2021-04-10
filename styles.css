@@ -600,9 +600,8 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     cursor: none;
-    border: 1px solid white;
    
 }
 
@@ -611,7 +610,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    cursor: pointer;
+
+    width: 100%;
   
 }
 
@@ -619,13 +621,21 @@ body{
 .swiper-container {
     width: 100%;
     height: 100%;
+ 
+   
 
 }
+
+
 
 .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -640,8 +650,37 @@ body{
     -webkit-align-items: center;
     align-items: center;
   }
-/* contact */
 
+
+
+.heading_par2{
+    font-size: 38px;
+    font-weight: bold;
+    color: #fbfcfd;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph-mockup{
+    font-size: 20px;
+    margin: 30px;
+    font-weight: 700;
+    color: #fbfcfd;
+}
+.view-work{
+    color:#fbfcfd;
+    margin: 50px;
+    border-color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+/* contact */
 .contact-main {
     display: flex;
     flex-direction: column;
@@ -817,7 +856,7 @@ body{
     font-size: 15px;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 1002px) {
     
     .content {
         width: 90%;
@@ -893,6 +932,8 @@ body{
         margin-top: 60px;
     }
 
+
+
     .my-services-con{
         flex-direction: column;
     }
@@ -912,6 +953,19 @@ body{
     }
 
     .skills-con{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .works-main{
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .work-con{
         flex-direction: column;
         width: 100%;
         align-items: center;
@@ -981,6 +1035,35 @@ body{
     
     .lines2::before, .lines2::after{
         width: 45%;
+    }
+
+    .banner-img{
+        width: 75%;
+        height: 75%;
+    }
+
+    .col-2{
+        width: 100%;
+    }
+
+    .lines::after, .lines::before{
+        content: '';
+        position: absolute;
+        margin: auto;
+        height: 2px;
+        background: #fff;
+        width: 48%;
+        top: 40%;
+    }
+    
+    .lines2::after, .lines2::before{
+        content: '';
+        position: absolute;
+        margin: auto;
+        height: 2px;
+        background: #fff;
+        width: 48%;
+        top: 40%;
     }
 }
 
