@@ -172,17 +172,8 @@
         }
     }
 
-    @media only screen and (max-width: 640px) {
-       
-        .main_text {
-            font-size: 30px;
-        }
 
-        .sub_text {
-            font-size: 22px;
-            margin-top: 0px;
-            margin-bottom: 10px;
-        }
+    @media only screen and (max-width: 801px) {
         #box1 {
             width: 530px;
             height: 625px;
@@ -190,7 +181,7 @@
             background-repeat: no-repeat;
             position: absolute;
             bottom: -100%;
-            left: -70;
+            left: 140;
             animation: anim 2s forwards, anim2 3s forwards 3s;
 
         }
@@ -201,19 +192,19 @@
             }
 
             to {
-                bottom: 0%;
+                bottom: 10%;
             }
         }
 
         @keyframes anim2 {
             from {
-                bottom: 0%;
+                bottom: 10%;
                 width: 530px;
             }
 
             to {
                 width: 0px;
-                bottom: -35%;
+                bottom: -40%;
             }
         }
 
@@ -228,7 +219,6 @@
 
         }
     }
-
     @media only screen and (max-width: 768px) {
         #box1 {
             width: 530px;
@@ -275,6 +265,204 @@
 
         }
     }
+
+    
+    @media only screen and (max-width: 600px) {
+       
+       .main_text {
+           font-size: 30px;
+       }
+
+       .sub_text {
+           font-size: 22px;
+           margin-top: 0px;
+           margin-bottom: 10px;
+       }
+       #box1 {
+           width: 530px;
+           height: 625px;
+           background-image: url('assets/laptop1.png');
+           background-repeat: no-repeat;
+           position: absolute;
+           bottom: -100%;
+           left: -70;
+           animation: anim 2s forwards, anim2 3s forwards 3s;
+
+       }
+
+       @keyframes anim {
+           from {
+               bottom: -100%;
+           }
+
+           to {
+               bottom: 0%;
+           }
+       }
+
+       @keyframes anim2 {
+           from {
+               bottom: 0%;
+               width: 530px;
+           }
+
+           to {
+               width: 0px;
+               bottom: -35%;
+           }
+       }
+
+       #box2 {
+           position: absolute;
+           left: 0px;
+           top: 170;
+           text-align: center;
+           width: 100%;
+           line-height: 50px;
+           animation: anim3 1s forwards 2s;
+
+       }
+   }
+    @media only screen and (max-width: 480px) {
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: -0;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
+
+            to {
+                bottom: 0%;
+            }
+        }
+
+        @keyframes anim2 {
+            from {
+                bottom: 0%;
+                width: 530px;
+            }
+
+            to {
+                width: 0px;
+                bottom: -40%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    } 
+
+    @media only screen and (max-width: 414px) {
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: -50;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
+
+            to {
+                bottom: 0%;
+            }
+        }
+
+        @keyframes anim2 {
+            from {
+                bottom: 0%;
+                width: 530px;
+            }
+
+            to {
+                width: 0px;
+                bottom: -30%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    } 
+
+    @media only screen and (max-width: 411px) {
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: -50;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
+
+        }
+
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
+
+            to {
+                bottom: 0%;
+            }
+        }
+
+        @keyframes anim2 {
+            from {
+                bottom: 0%;
+                width: 530px;
+            }
+
+            to {
+                width: 0px;
+                bottom: -20%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    } 
 
     @media only screen and (max-width: 375px) {
         #box1 {
