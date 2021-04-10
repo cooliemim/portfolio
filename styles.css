@@ -108,6 +108,7 @@ body{
     position: fixed;
     top: 30;
     right: 30;
+    z-index: 9999999;
 }
 
 .side-bar{
@@ -601,7 +602,7 @@ body{
     align-items: center;
     width: 100%;
     height: auto;
-    cursor: none;
+    cursor: pointer;
    
 }
 
@@ -611,8 +612,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    cursor: pointer;
-
     width: 100%;
   
 }
