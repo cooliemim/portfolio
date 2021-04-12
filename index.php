@@ -22,8 +22,8 @@
       $mail->isSMTP();
       $mail->Host = 'smtp.gmail.com';
       $mail->SMTPAuth = true;
-      $mail->Username = 'alexakleinayes@gmail.com';
-      $mail->Password = 'dummy';
+      $mail->Username = 'mimsinaz@gmail.com';
+      $mail->Password = '741852963mimsi';
       $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
       $mail->Port = 587;
 
@@ -63,42 +63,6 @@
 </head>
 
 <style>
-    .sidenav {
-        height: 100vh;
-        width: 0;
-        position: fixed;
-        z-index: 9999999;
-        top: 0;
-        right: 0;
-        background: linear-gradient(#00545d, #000729);
-
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
-
-    .sidenav a {
-        padding: 8px 8px 8px 20px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 10;
-        right: 25px;
-        font-size: 40px;
-        margin-left: 50px;
-        margin-bottom: 20px;
-    }
-
     #box1 {
         width: 530px;
         height: 625px;
@@ -219,6 +183,7 @@
 
         }
     }
+
     @media only screen and (max-width: 768px) {
         #box1 {
             width: 530px;
@@ -266,63 +231,65 @@
         }
     }
 
-    
+
     @media only screen and (max-width: 600px) {
-       
-       .main_text {
-           font-size: 30px;
-       }
 
-       .sub_text {
-           font-size: 22px;
-           margin-top: 0px;
-           margin-bottom: 10px;
-       }
-       #box1 {
-           width: 530px;
-           height: 625px;
-           background-image: url('assets/laptop1.png');
-           background-repeat: no-repeat;
-           position: absolute;
-           bottom: -100%;
-           left: -70;
-           animation: anim 2s forwards, anim2 3s forwards 3s;
+        .main_text {
+            font-size: 30px;
+        }
 
-       }
+        .sub_text {
+            font-size: 22px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+        }
 
-       @keyframes anim {
-           from {
-               bottom: -100%;
-           }
+        #box1 {
+            width: 530px;
+            height: 625px;
+            background-image: url('assets/laptop1.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: -100%;
+            left: -70;
+            animation: anim 2s forwards, anim2 3s forwards 3s;
 
-           to {
-               bottom: 0%;
-           }
-       }
+        }
 
-       @keyframes anim2 {
-           from {
-               bottom: 0%;
-               width: 530px;
-           }
+        @keyframes anim {
+            from {
+                bottom: -100%;
+            }
 
-           to {
-               width: 0px;
-               bottom: -35%;
-           }
-       }
+            to {
+                bottom: 0%;
+            }
+        }
 
-       #box2 {
-           position: absolute;
-           left: 0px;
-           top: 170;
-           text-align: center;
-           width: 100%;
-           line-height: 50px;
-           animation: anim3 1s forwards 2s;
+        @keyframes anim2 {
+            from {
+                bottom: 0%;
+                width: 530px;
+            }
 
-       }
-   }
+            to {
+                width: 0px;
+                bottom: -35%;
+            }
+        }
+
+        #box2 {
+            position: absolute;
+            left: 0px;
+            top: 170;
+            text-align: center;
+            width: 100%;
+            line-height: 50px;
+            animation: anim3 1s forwards 2s;
+
+        }
+    }
+
     @media only screen and (max-width: 480px) {
         #box1 {
             width: 530px;
@@ -368,7 +335,7 @@
             animation: anim3 1s forwards 2s;
 
         }
-    } 
+    }
 
     @media only screen and (max-width: 414px) {
         #box1 {
@@ -415,7 +382,7 @@
             animation: anim3 1s forwards 2s;
 
         }
-    } 
+    }
 
     @media only screen and (max-width: 411px) {
         #box1 {
@@ -462,7 +429,7 @@
             animation: anim3 1s forwards 2s;
 
         }
-    } 
+    }
 
     @media only screen and (max-width: 375px) {
         #box1 {
@@ -509,7 +476,8 @@
             animation: anim3 1s forwards 2s;
 
         }
-    } 
+    }
+
     @media only screen and (max-width: 360px) {
         #box1 {
             width: 530px;
@@ -555,7 +523,7 @@
             animation: anim3 1s forwards 2s;
 
         }
-    } 
+    }
 
     @media only screen and (max-width: 320px) {
         #box1 {
@@ -602,7 +570,7 @@
             animation: anim3 1s forwards 2s;
 
         }
-    } 
+    }
 
 
     @media screen and (max-height: 450px) {
@@ -733,9 +701,9 @@
                             <div class="circle"></div>
                         </div>
                     </div>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut
-                        labore et dolore magna aliqua.
+                    <p class="paragraph">The skills I gathered on every experience further helps me to execute a job properly and on time.
+                       However I believe there's always  a room for improvement. Would you let me be your partner in growth and development?<br><br>
+                     Kindly check my portfolio and lets work together! <i class="fa fa-smile-o" aria-hidden="true"></i>
                     </p>
                 </div>
             </div>
@@ -770,7 +738,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="swiper-container">
                 <p class="paragraph-mockup">Mock up Designs</p>
                 <div class="swiper-wrapper">
@@ -779,24 +747,24 @@
                         <button class="view-work" id="myButton">View Work</button>
                     </div>
                     <div class="swiper-slide">
-                    <img  class="banner-img" src="assets/mobilebanner.png" />
-                    <button class="view-work">View Work</button>
-                    <!-- <a href="#" class="view-work">View Work</a> -->
+                        <img class="banner-img" src="assets/mobilebanner.png" />
+                        <button class="view-work" id="myButtonapp">View Work</button>
+                        <!-- <a href="#" class="view-work">View Work</a> -->
                     </div>
                     <div class="swiper-slide">
-                    <img class="banner-img" src="assets/cbanner.png" />
-                    <button class="view-work">View Work</button>
+                        <img class="banner-img" src="assets/cbanner.png" />
+                        <button class="view-work" id="myButtoncoffee">View Work</button>
                     </div>
 
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
             </div>
 
-            <div class="col-2" style="margin-top:30px;" >
+            <div class="col-2" style="margin-top:30px;">
                 <div class="container-div">
                     <div class="lines">
                         <div class="circle"></div>
@@ -809,25 +777,25 @@
                 <p class="paragraph-mockup">Contributor to a projects under Clique Management</p>
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="banner-img" src="assets/ebanner.png" />
-                        <button class="view-work" >View Work</button>
+                        <img style="width:60%; height:60%;" src="assets/obando.png" />
+                        <button class="view-work" id="myButtonobando">Visit Website</button>
                     </div>
                     <div class="swiper-slide">
-                    <img  class="banner-img" src="assets/mobilebanner.png" />
-                    <button class="view-work">View Work</button>
-                    <!-- <a href="#" class="view-work">View Work</a> -->
+                        <img style="width:60%; height:60%;" src="assets/favori.png" />
+                        <button class="view-work" id="myButtonfavori">Visit Website</button>
                     </div>
                     <div class="swiper-slide">
-                    <img class="banner-img" src="assets/cbanner.png" />
-                    <button class="view-work">View Work</button>
+                        <img style="width:60%; height:80%;" src="assets/banner-con.jpg" />
+                        <div class="view-work">Mobile Application</div>
+
                     </div>
 
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
                 <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
             </div>
         </div>
     </div>
@@ -933,9 +901,9 @@
             <a href="#contact">Contact</a>
         </div>
         <div class="social-links-2">
-            <img src="assets/fb.png">
-            <img src="assets/ig.png">
-            <img src="assets/tw.png">
+            <a href="https://www.facebook.com/alexaklein.ayes" target="_blank"> <img src="assets/fb.png"></a>
+            <a href="https://www.instagram.com/cooliemim/" target="_blank"><img src="assets/ig.png"></a>
+            <a href="https://twitter.com/AyesAlexa" target="_blank"><img src="assets/tw.png"></a>
         </div>
     </div>
 
@@ -1024,8 +992,25 @@
 
 
         document.getElementById("myButton").onclick = function () {
-        location.href = "ecommerce.html";
-    };
+            location.href = "ecommerce.html";
+        };
+
+        document.getElementById("myButtoncoffee").onclick = function () {
+            location.href = "coffee.html";
+        };
+
+        document.getElementById("myButtonapp").onclick = function () {
+            location.href = "app.html";
+        };
+
+        $("#myButtonobando").on('click', function () {
+            window.open("https://obando.clique.com.ph/", "_blank");
+        });
+
+        $("#myButtonfavori").on('click', function () {
+            window.open("http://favori.clique.com.ph/", "_blank");
+        });
+
     </script>
 
     <script>

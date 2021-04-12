@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+    align-items: center;
+    width: 100%;
+}
+.box-image{
+    /* position: absolute; */
+    /* top: 50%;
+    left: 20%; */
+    /* transform: translate(-50%, -50%); */
+    width: 600px;
+    height: 600px;
+    background:url(assets/coffee.png);
+    background-size: cover;
+    background-position: top;
+    border: 5px solid #fff;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.5);
+    transition: 15s;
+}
+
+.box-image:hover{
+    background-position: bottom;
+}
+
+
+
+.resume{
+    color: #333333;
+    border-color: #00545d;
+    margin-top: 15px;
+    padding: 10px 25px;
+    background: transparent;
+    border-radius: 20px;
+    outline:none;
+    cursor: pointer;
+    width: 200px;
+    z-index: 99999;
+    margin: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .row{
+        flex-direction: column;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .box-image{
+        width: 300px;
+        height: 500px;
+      
+    }
+  
+}
