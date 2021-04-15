@@ -775,7 +775,7 @@
             </div>
 
             <div class="swiper-container">
-                <p class="paragraph-mockup">Contributor to a projects under Clique Management w/ NDA Agreement</p>
+                <p class="paragraph-mockup">Contributor to a projects under Clique Management</p>
                 <div class="swiper-wrapper">
                    
                     <div class="swiper-slide">
