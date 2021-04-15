@@ -773,30 +773,7 @@
             </div>
 
 
-            <div class="swiper-container">
-                <p class="paragraph-mockup">Contributor to a projects under Clique Management</p>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img style="width:60%; height:60%;" src="assets/obando.png" />
-                        <button class="view-work" id="myButtonobando">Visit Website</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <img style="width:60%; height:60%;" src="assets/favori.png" />
-                        <button class="view-work" id="myButtonfavori">Visit Website</button>
-                    </div>
-                    <div class="swiper-slide">
-                        <img style="width:60%; height:80%;" src="assets/banner-con.jpg" />
-                        <div class="view-work">Mobile Application</div>
-
-                    </div>
-
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-            </div>
+        
         </div>
     </div>
 
