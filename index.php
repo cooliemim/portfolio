@@ -774,13 +774,17 @@
                 </div>
             </div>
 
+
             <div class="swiper-container">
                 <p class="paragraph-mockup">Contributor to a projects under Clique Management</p>
                 <div class="swiper-wrapper">
-                   
                     <div class="swiper-slide">
-                        <img style="width:60%; height:50%;" src="assets/fav.png" />
-                        <div class="view-work">Ecommerce Website</div>
+                        <img style="width:60%; height:60%;" src="assets/obando.png" />
+                        <button class="view-work" id="myButtonobando">Visit Website</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img style="width:60%; height:60%;" src="assets/favori.png" />
+                        <button class="view-work" id="myButtonfavori">Visit Website</button>
                     </div>
                     <div class="swiper-slide">
                         <img style="width:60%; height:80%;" src="assets/banner-con.jpg" />
