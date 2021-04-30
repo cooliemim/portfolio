@@ -990,7 +990,7 @@
 
     <script>
         var viewer = $('#view_pdf');
-        PDFObject.embed('Ayes_Alexa_Klein_Resume.pdf', viewer);
+        PDFObject.embed('Ayes_Alexa_Klein_Resume_New.pdf', viewer);
 
 
         document.getElementById("myButton").onclick = function () {
